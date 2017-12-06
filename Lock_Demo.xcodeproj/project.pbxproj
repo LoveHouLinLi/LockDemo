@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB4F70A41FD4DDA90021D48E /* OneThreadControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70A31FD4DDA90021D48E /* OneThreadControl.m */; };
+		BB4F70A71FD4DEF30021D48E /* MainThreadControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70A61FD4DEF30021D48E /* MainThreadControl.m */; };
+		BB4F70AA1FD4E81B0021D48E /* synchronizedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70A91FD4E81B0021D48E /* synchronizedControl.m */; };
+		BB4F70AD1FD4EC140021D48E /* DispatchSemaphoreControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70AC1FD4EC140021D48E /* DispatchSemaphoreControl.m */; };
+		BB4F70B01FD4EEFC0021D48E /* NSConditionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70AF1FD4EEFC0021D48E /* NSConditionControl.m */; };
+		BB4F70B31FD4F4510021D48E /* NSConditionLockControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70B21FD4F4510021D48E /* NSConditionLockControl.m */; };
+		BB4F70B61FD5464F0021D48E /* NSRecursiveLockControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70B51FD5464F0021D48E /* NSRecursiveLockControl.m */; };
+		BB4F70B91FD54C290021D48E /* NSDeadLockControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70B81FD54C290021D48E /* NSDeadLockControl.m */; };
+		BB4F70C21FD555660021D48E /* POSIXControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70C11FD555660021D48E /* POSIXControl.m */; };
+		BB4F70C51FD67CCA0021D48E /* OSSpinLockControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70C41FD67CCA0021D48E /* OSSpinLockControl.m */; };
+		BB4F70C81FD67CF30021D48E /* dispatch_barrier_syncControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70C71FD67CF30021D48E /* dispatch_barrier_syncControl.m */; };
+		BB4F70CB1FD67D170021D48E /* dispatch_barrier_asyncControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70CA1FD67D170021D48E /* dispatch_barrier_asyncControl.m */; };
+		BB4F70D11FD793EC0021D48E /* EntirelyController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F70D01FD793EC0021D48E /* EntirelyController.m */; };
+		BB7CF9031FD0F1BA005F03E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7CF9021FD0F1BA005F03E3 /* AppDelegate.m */; };
+		BB7CF9061FD0F1BA005F03E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7CF9051FD0F1BA005F03E3 /* ViewController.m */; };
+		BB7CF9091FD0F1BA005F03E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7CF9071FD0F1BA005F03E3 /* Main.storyboard */; };
+		BB7CF90B1FD0F1BA005F03E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7CF90A1FD0F1BA005F03E3 /* Assets.xcassets */; };
+		BB7CF90E1FD0F1BA005F03E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7CF90C1FD0F1BA005F03E3 /* LaunchScreen.storyboard */; };
+		BB7CF9111FD0F1BA005F03E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7CF9101FD0F1BA005F03E3 /* main.m */; };
+		BB7CF93E1FD28471005F03E3 /* BaseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7CF93D1FD28471005F03E3 /* BaseControl.m */; };
+		BB7CF9411FD28FDE005F03E3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7CF9401FD28FDE005F03E3 /* BaseViewController.m */; };
+		BB7CF9471FD29FA5005F03E3 /* atomicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7CF9461FD29FA5005F03E3 /* atomicControl.m */; };
+		BB7CF94A1FD2A837005F03E3 /* NSLockControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7CF9491FD2A837005F03E3 /* NSLockControl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB4F70A21FD4DDA90021D48E /* OneThreadControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneThreadControl.h; sourceTree = "<group>"; };
+		BB4F70A31FD4DDA90021D48E /* OneThreadControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneThreadControl.m; sourceTree = "<group>"; };
+		BB4F70A51FD4DEF30021D48E /* MainThreadControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainThreadControl.h; sourceTree = "<group>"; };
+		BB4F70A61FD4DEF30021D48E /* MainThreadControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainThreadControl.m; sourceTree = "<group>"; };
+		BB4F70A81FD4E81B0021D48E /* synchronizedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = synchronizedControl.h; sourceTree = "<group>"; };
+		BB4F70A91FD4E81B0021D48E /* synchronizedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = synchronizedControl.m; sourceTree = "<group>"; };
+		BB4F70AB1FD4EC140021D48E /* DispatchSemaphoreControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSemaphoreControl.h; sourceTree = "<group>"; };
+		BB4F70AC1FD4EC140021D48E /* DispatchSemaphoreControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreControl.m; sourceTree = "<group>"; };
+		BB4F70AE1FD4EEFC0021D48E /* NSConditionControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionControl.h; sourceTree = "<group>"; };
+		BB4F70AF1FD4EEFC0021D48E /* NSConditionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionControl.m; sourceTree = "<group>"; };
+		BB4F70B11FD4F4510021D48E /* NSConditionLockControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionLockControl.h; sourceTree = "<group>"; };
+		BB4F70B21FD4F4510021D48E /* NSConditionLockControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockControl.m; sourceTree = "<group>"; };
+		BB4F70B41FD5464F0021D48E /* NSRecursiveLockControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRecursiveLockControl.h; sourceTree = "<group>"; };
+		BB4F70B51FD5464F0021D48E /* NSRecursiveLockControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRecursiveLockControl.m; sourceTree = "<group>"; };
+		BB4F70B71FD54C290021D48E /* NSDeadLockControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDeadLockControl.h; sourceTree = "<group>"; };
+		BB4F70B81FD54C290021D48E /* NSDeadLockControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDeadLockControl.m; sourceTree = "<group>"; };
+		BB4F70C01FD555660021D48E /* POSIXControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POSIXControl.h; sourceTree = "<group>"; };
+		BB4F70C11FD555660021D48E /* POSIXControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POSIXControl.m; sourceTree = "<group>"; };
+		BB4F70C31FD67CCA0021D48E /* OSSpinLockControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSpinLockControl.h; sourceTree = "<group>"; };
+		BB4F70C41FD67CCA0021D48E /* OSSpinLockControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockControl.m; sourceTree = "<group>"; };
+		BB4F70C61FD67CF30021D48E /* dispatch_barrier_syncControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dispatch_barrier_syncControl.h; sourceTree = "<group>"; };
+		BB4F70C71FD67CF30021D48E /* dispatch_barrier_syncControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dispatch_barrier_syncControl.m; sourceTree = "<group>"; };
+		BB4F70C91FD67D170021D48E /* dispatch_barrier_asyncControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dispatch_barrier_asyncControl.h; sourceTree = "<group>"; };
+		BB4F70CA1FD67D170021D48E /* dispatch_barrier_asyncControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dispatch_barrier_asyncControl.m; sourceTree = "<group>"; };
+		BB4F70CF1FD793EC0021D48E /* EntirelyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntirelyController.h; sourceTree = "<group>"; };
+		BB4F70D01FD793EC0021D48E /* EntirelyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntirelyController.m; sourceTree = "<group>"; };
+		BB7CF8FE1FD0F1BA005F03E3 /* Lock_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lock_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7CF9011FD0F1BA005F03E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB7CF9021FD0F1BA005F03E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB7CF9041FD0F1BA005F03E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BB7CF9051FD0F1BA005F03E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BB7CF9081FD0F1BA005F03E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB7CF90A1FD0F1BA005F03E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB7CF90D1FD0F1BA005F03E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB7CF90F1FD0F1BA005F03E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7CF9101FD0F1BA005F03E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB7CF93C1FD28471005F03E3 /* BaseControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseControl.h; sourceTree = "<group>"; };
+		BB7CF93D1FD28471005F03E3 /* BaseControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseControl.m; sourceTree = "<group>"; };
+		BB7CF93F1FD28FDE005F03E3 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		BB7CF9401FD28FDE005F03E3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		BB7CF9451FD29FA5005F03E3 /* atomicControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = atomicControl.h; sourceTree = "<group>"; };
+		BB7CF9461FD29FA5005F03E3 /* atomicControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = atomicControl.m; sourceTree = "<group>"; };
+		BB7CF9481FD2A837005F03E3 /* NSLockControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockControl.h; sourceTree = "<group>"; };
+		BB7CF9491FD2A837005F03E3 /* NSLockControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockControl.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB7CF8FB1FD0F1BA005F03E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB7CF8F51FD0F1BA005F03E3 = {
+			isa = PBXGroup;
+			children = (
+				BB7CF9001FD0F1BA005F03E3 /* Lock_Demo */,
+				BB7CF8FF1FD0F1BA005F03E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB7CF8FF1FD0F1BA005F03E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB7CF8FE1FD0F1BA005F03E3 /* Lock_Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB7CF9001FD0F1BA005F03E3 /* Lock_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				BB7CF93A1FD245C4005F03E3 /* Bases */,
+				BB7CF9391FD245C4005F03E3 /* Controllers */,
+				BB7CF93B1FD245C4005F03E3 /* ViewControllers */,
+				BB7CF9011FD0F1BA005F03E3 /* AppDelegate.h */,
+				BB7CF9021FD0F1BA005F03E3 /* AppDelegate.m */,
+				BB7CF9071FD0F1BA005F03E3 /* Main.storyboard */,
+				BB7CF90A1FD0F1BA005F03E3 /* Assets.xcassets */,
+				BB7CF90C1FD0F1BA005F03E3 /* LaunchScreen.storyboard */,
+				BB7CF90F1FD0F1BA005F03E3 /* Info.plist */,
+				BB7CF9101FD0F1BA005F03E3 /* main.m */,
+			);
+			path = Lock_Demo;
+			sourceTree = "<group>";
+		};
+		BB7CF9391FD245C4005F03E3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB7CF9451FD29FA5005F03E3 /* atomicControl.h */,
+				BB7CF9461FD29FA5005F03E3 /* atomicControl.m */,
+				BB7CF9481FD2A837005F03E3 /* NSLockControl.h */,
+				BB7CF9491FD2A837005F03E3 /* NSLockControl.m */,
+				BB4F70A21FD4DDA90021D48E /* OneThreadControl.h */,
+				BB4F70A31FD4DDA90021D48E /* OneThreadControl.m */,
+				BB4F70A51FD4DEF30021D48E /* MainThreadControl.h */,
+				BB4F70A61FD4DEF30021D48E /* MainThreadControl.m */,
+				BB4F70A81FD4E81B0021D48E /* synchronizedControl.h */,
+				BB4F70A91FD4E81B0021D48E /* synchronizedControl.m */,
+				BB4F70AB1FD4EC140021D48E /* DispatchSemaphoreControl.h */,
+				BB4F70AC1FD4EC140021D48E /* DispatchSemaphoreControl.m */,
+				BB4F70AE1FD4EEFC0021D48E /* NSConditionControl.h */,
+				BB4F70AF1FD4EEFC0021D48E /* NSConditionControl.m */,
+				BB4F70B11FD4F4510021D48E /* NSConditionLockControl.h */,
+				BB4F70B21FD4F4510021D48E /* NSConditionLockControl.m */,
+				BB4F70B41FD5464F0021D48E /* NSRecursiveLockControl.h */,
+				BB4F70B51FD5464F0021D48E /* NSRecursiveLockControl.m */,
+				BB4F70B71FD54C290021D48E /* NSDeadLockControl.h */,
+				BB4F70B81FD54C290021D48E /* NSDeadLockControl.m */,
+				BB4F70C01FD555660021D48E /* POSIXControl.h */,
+				BB4F70C11FD555660021D48E /* POSIXControl.m */,
+				BB4F70C31FD67CCA0021D48E /* OSSpinLockControl.h */,
+				BB4F70C41FD67CCA0021D48E /* OSSpinLockControl.m */,
+				BB4F70C91FD67D170021D48E /* dispatch_barrier_asyncControl.h */,
+				BB4F70CA1FD67D170021D48E /* dispatch_barrier_asyncControl.m */,
+				BB4F70C61FD67CF30021D48E /* dispatch_barrier_syncControl.h */,
+				BB4F70C71FD67CF30021D48E /* dispatch_barrier_syncControl.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BB7CF93A1FD245C4005F03E3 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				BB7CF93C1FD28471005F03E3 /* BaseControl.h */,
+				BB7CF93D1FD28471005F03E3 /* BaseControl.m */,
+				BB7CF93F1FD28FDE005F03E3 /* BaseViewController.h */,
+				BB7CF9401FD28FDE005F03E3 /* BaseViewController.m */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		BB7CF93B1FD245C4005F03E3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB7CF9041FD0F1BA005F03E3 /* ViewController.h */,
+				BB7CF9051FD0F1BA005F03E3 /* ViewController.m */,
+				BB4F70CF1FD793EC0021D48E /* EntirelyController.h */,
+				BB4F70D01FD793EC0021D48E /* EntirelyController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB7CF8FD1FD0F1BA005F03E3 /* Lock_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7CF9141FD0F1BA005F03E3 /* Build configuration list for PBXNativeTarget "Lock_Demo" */;
+			buildPhases = (
+				BB7CF8FA1FD0F1BA005F03E3 /* Sources */,
+				BB7CF8FB1FD0F1BA005F03E3 /* Frameworks */,
+				BB7CF8FC1FD0F1BA005F03E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lock_Demo;
+			productName = Lock_Demo;
+			productReference = BB7CF8FE1FD0F1BA005F03E3 /* Lock_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB7CF8F61FD0F1BA005F03E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = DeLongYang;
+				TargetAttributes = {
+					BB7CF8FD1FD0F1BA005F03E3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BB7CF8F91FD0F1BA005F03E3 /* Build configuration list for PBXProject "Lock_Demo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB7CF8F51FD0F1BA005F03E3;
+			productRefGroup = BB7CF8FF1FD0F1BA005F03E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB7CF8FD1FD0F1BA005F03E3 /* Lock_Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB7CF8FC1FD0F1BA005F03E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7CF90E1FD0F1BA005F03E3 /* LaunchScreen.storyboard in Resources */,
+				BB7CF90B1FD0F1BA005F03E3 /* Assets.xcassets in Resources */,
+				BB7CF9091FD0F1BA005F03E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB7CF8FA1FD0F1BA005F03E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4F70B61FD5464F0021D48E /* NSRecursiveLockControl.m in Sources */,
+				BB4F70A41FD4DDA90021D48E /* OneThreadControl.m in Sources */,
+				BB7CF93E1FD28471005F03E3 /* BaseControl.m in Sources */,
+				BB4F70A71FD4DEF30021D48E /* MainThreadControl.m in Sources */,
+				BB4F70B91FD54C290021D48E /* NSDeadLockControl.m in Sources */,
+				BB4F70C51FD67CCA0021D48E /* OSSpinLockControl.m in Sources */,
+				BB4F70AA1FD4E81B0021D48E /* synchronizedControl.m in Sources */,
+				BB4F70B01FD4EEFC0021D48E /* NSConditionControl.m in Sources */,
+				BB7CF9411FD28FDE005F03E3 /* BaseViewController.m in Sources */,
+				BB7CF9471FD29FA5005F03E3 /* atomicControl.m in Sources */,
+				BB4F70AD1FD4EC140021D48E /* DispatchSemaphoreControl.m in Sources */,
+				BB7CF9061FD0F1BA005F03E3 /* ViewController.m in Sources */,
+				BB4F70B31FD4F4510021D48E /* NSConditionLockControl.m in Sources */,
+				BB4F70CB1FD67D170021D48E /* dispatch_barrier_asyncControl.m in Sources */,
+				BB7CF9111FD0F1BA005F03E3 /* main.m in Sources */,
+				BB4F70C81FD67CF30021D48E /* dispatch_barrier_syncControl.m in Sources */,
+				BB4F70D11FD793EC0021D48E /* EntirelyController.m in Sources */,
+				BB4F70C21FD555660021D48E /* POSIXControl.m in Sources */,
+				BB7CF94A1FD2A837005F03E3 /* NSLockControl.m in Sources */,
+				BB7CF9031FD0F1BA005F03E3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB7CF9071FD0F1BA005F03E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7CF9081FD0F1BA005F03E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB7CF90C1FD0F1BA005F03E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7CF90D1FD0F1BA005F03E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB7CF9121FD0F1BA005F03E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB7CF9131FD0F1BA005F03E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB7CF9151FD0F1BA005F03E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPN9LTK8YN;
+				INFOPLIST_FILE = Lock_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DeLongYang.Lock-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB7CF9161FD0F1BA005F03E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPN9LTK8YN;
+				INFOPLIST_FILE = Lock_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DeLongYang.Lock-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB7CF8F91FD0F1BA005F03E3 /* Build configuration list for PBXProject "Lock_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7CF9121FD0F1BA005F03E3 /* Debug */,
+				BB7CF9131FD0F1BA005F03E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7CF9141FD0F1BA005F03E3 /* Build configuration list for PBXNativeTarget "Lock_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7CF9151FD0F1BA005F03E3 /* Debug */,
+				BB7CF9161FD0F1BA005F03E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB7CF8F61FD0F1BA005F03E3 /* Project object */;
+}
