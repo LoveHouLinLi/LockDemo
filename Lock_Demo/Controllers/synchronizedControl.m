@@ -17,7 +17,7 @@
         @synchronized(self){
             
             // 通过打印 count 对比在
-            NSLog(@"imageNames count: %ld",imageNameArray.count);
+//            NSLog(@"imageNames count: %ld",imageNameArray.count);
             if (imageNameArray.count>0) {
                 imageName = [imageNameArray firstObject];
                 [imageNameArray removeObjectAtIndex:0];
