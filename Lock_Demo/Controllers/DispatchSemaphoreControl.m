@@ -43,14 +43,14 @@
          */
         dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
         
-        NSLog(@"imageNames count: %ld",imageNameArray.count);
+//        NSLog(@"imageNames count: %ld",imageNameArray.count);
         if (imageNameArray.count>0) {
             imageName = [imageNameArray firstObject];
             [imageNameArray removeObjectAtIndex:0];
         } else {
             now = CFAbsoluteTimeGetCurrent();
             printf("%30s_lock: %f sec-----imageNames count: %ld\n",[self.title UTF8String] , now-then,imageNameArray.count);
-            dispatch_semaphore_signal(semaphore);
+//            dispatch_semaphore_signal(semaphore);
             return;
         }
         

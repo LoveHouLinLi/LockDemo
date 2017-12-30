@@ -92,7 +92,7 @@
     dispatch_group_t dispatchGroup = dispatch_group_create();
     __block double then,now;
     then = CFAbsoluteTimeGetCurrent();  // 获取绝对时间
-    for (int i =0; i<1024; i++) {
+    for (int i = 0; i<1024; i++) {
         dispatch_group_async(dispatchGroup, self.syncronizationQueue, ^{
             [self getImageName:imageNames];
         });

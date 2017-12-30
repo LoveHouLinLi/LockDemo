@@ -50,5 +50,12 @@
     [self.control getIamgeNameWithMutiThread];
 }
 
+- (void)dealloc
+{
+    NSLog(@"BaseViewController Dealloc --- ");
+}
+
+
+
 
 @end

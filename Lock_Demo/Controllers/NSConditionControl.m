@@ -110,7 +110,7 @@
  */
 - (void)getIamgeNameWithMutiThread
 {
-    [conditionLock broadcast];
+    [conditionLock broadcast]; // 唤醒所有的 多线程 取消等待继续执行
     NSMutableArray *imageNames = [NSMutableArray array];
     // 创建一个 GCD Group
     dispatch_group_t dispatchGroup = dispatch_group_create();
